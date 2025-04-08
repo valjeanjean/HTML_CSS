@@ -3,6 +3,7 @@
 body{
     
     background-color: #212429;
+    font-family:serif;
 }
 
 header{
@@ -20,9 +21,14 @@ a{
     transition: opacity 0.3s;
 }
 
-p, h1, h2{
+p, span{
 
-    color:white;
+    color: #c4cfde;
+}
+
+h2{
+
+    color: white;
 }
 
 li{
@@ -34,8 +40,6 @@ li{
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    z-index: 1;
-    
 }
 
 a:hover{
@@ -47,17 +51,17 @@ a:hover{
 
     display:flex;
     justify-content: space-around;
-    gap: 50px;
-    font-size: 15px;
+    gap: 45px;
+    font-size: 14px;
 }
 
 .buy{
 
-    color:red;
+    color:#ff6363;
     border-radius: 6px;
     box-shadow: 1px 1px 20px black;
     background: linear-gradient(145deg, #1e2024, #23272b);
-    font-weight: bold;
+    font-weight:lighter;
     font-size: 16px;
     padding: 10px 30px;
     
@@ -78,4 +82,9 @@ a:hover{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     z-index: -1;
+}
+
+.main_title{
+
+    font-size: 50px;
 }
