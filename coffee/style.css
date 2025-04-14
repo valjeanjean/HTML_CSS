@@ -1,3 +1,15 @@
+*{
+
+    border:red;
+}
+
+
+img{
+
+    width: 100%;
+    aspect-ratio: 2.5/3;
+}
+
 /* Mobile (par défaut) */
 body {
     font-size: 16px; 
@@ -17,9 +29,19 @@ body {
 }
 
 body{
-
+    display: flex;
+    justify-content: center;
     background: linear-gradient(#E2D9C8, #beb9b0);
     color: #E2D9C8; 
+    padding-top: 5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+
+    width: 80%;
 }
 
 a{
@@ -37,13 +59,8 @@ a:hover{
 .about_us{
 
     background-image: url(/icons/BaristaLatte-Canardcafe.jpg);
-
     background-size: cover;
     height: 75vh;
-    margin-top: 5%; /* Vérifier si c'est bien d'utiliser margintop dans ce cas */
-    margin-left: 5%;
-    margin-right: 5%;
-    
 }
 
 li{
@@ -56,7 +73,6 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 2%;
     color: white;
     padding: 2% 5%;
 }
@@ -91,8 +107,8 @@ li{
 
 .search_bar{
 
-    width: 55%;
-    
+    min-width: 30%;
+    max-width: 55%;
 }
 
 .illustrations{
@@ -109,6 +125,7 @@ li{
     font-weight: bold;
     display:flex;
     flex-direction: column;
+    max-width: 10%;
 }
 
 .order_now{
@@ -124,4 +141,74 @@ li{
     box-shadow: 
     10px 10px 10px black,
     10px 10px 10px rgb(92, 92, 92);
+}
+
+.specialities{
+
+    color:#615849;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.catalogue{
+
+    background: #ffffff;
+
+}
+
+.products{
+
+    display: grid;
+
+    height: auto;
+    justify-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+.our_coffees{
+    
+    background: #EEEBE6;
+    padding: 5px;
+    border-style: solid;
+    justify-self: center;
+}
+
+.our_coffees button{
+
+    border-radius: 0.7em;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    background-color: #302921;
+    color: white;
+}
+
+.products_row{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.products_infos{
+
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.products_infos p{
+
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.coffee_banner{
+
+    padding-top: 5%;
+    height: 300px;
+
 }
